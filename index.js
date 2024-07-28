@@ -79,9 +79,9 @@ function addToOrder(itemName) {
 
     // Calculate and update the total price
         const currentTotal = parseFloat(orderTotal.textContent); 
-        const itemPrice = Math.floor(Math.random() * 500) + 1; 
+        const itemPrice = Math.floor(Math.random() * 500) + 60; 
         const newTotal = itemPrice + currentTotal; 
-        orderTotal.textContent = newTotal.toFixed(2);
+        orderTotal.textContent = newTotal;
 
     // Update the text content of the order total element with the new total
     orderTotal.textContent = newTotal;
