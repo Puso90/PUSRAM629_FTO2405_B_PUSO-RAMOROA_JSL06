@@ -79,7 +79,7 @@ function addToOrder(itemName) {
 
     // Calculate and update the total price
         const currentTotal = parseFloat(orderTotal.textContent); 
-        const itemPrice = Math.floor(Math.random() * 100) + 1; 
+        const itemPrice = Math.floor(Math.random() * 1000) + 1; 
         const newTotal = itemPrice + currentTotal; 
         orderTotal.textContent = newTotal.toFixed(2);
 
