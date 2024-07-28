@@ -24,7 +24,7 @@ function displayMenuItems(menu) {
             
             // HINT: Append the list item to the category's list
         
-        });
+        
     }
 }
 
