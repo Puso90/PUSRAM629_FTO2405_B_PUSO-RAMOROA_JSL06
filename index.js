@@ -32,22 +32,22 @@ function displayMenuItems(menu) {
 
 
         // Loop through the items in the category and create list items
-        
+        items.forEach(item => {
 
 
             // Create a list item element
-            
+            const listItem = document.createElement('li');
 
             // Set the text content of the list item element to the item name
-           
+            listItem.textContent = item;
 
             // Attach a click event listener to the list item to add it to the order
-           
+            listItem.addEventListener("click", () => addToOrder(item));
 
             // Append the list item to the list of items
-           
+            listOfItems.appendChild(listItem);
 
-       
+        });
     }
 
 }
